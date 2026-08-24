@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f1e6;
+    color: #26351f;
+    line-height: 1.6;
+}
+
+header {
+    background: #1d3b27;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e8bd62;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background: linear-gradient(90deg, #14311d, #376044, #91a967);
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.categoria {
+    color: #dcae4d;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #d9a441;
+    color: #17251a;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobre {
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.sobre h2,
+.titulo-secao h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.sobre p {
+    font-size: 18px;
+    color: #596351;
+}
+
+.artigos {
+    padding: 80px 8%;
+    background: #e9e5d8;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.cards {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.imagem {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.macaco1 {
+    background: #b9c995;
+}
+
+.macaco2 {
+    background: #6e9b68;
+}
+
+.macaco3 {
+    background: #e5bd69;
+}
+
+.conteudo {
+    padding: 25px;
+}
+
+.tag {
+    color: #668353;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #697064;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #315e3a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.curiosidades {
+    padding: 90px 8%;
+}
+
+.curiosidades-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.curiosidade {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    text-align: center;
+    border-top: 5px solid #658653;
+}
+
+.curiosidade span {
+    font-size: 45px;
+}
+
+.curiosidade h3 {
+    margin: 15px 0 8px;
+    font-size: 22px;
+}
+
+.curiosidade p {
+    color: #687064;
+}
+
+.newsletter {
+    background: #284d32;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.newsletter h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+form input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 7px 0 0 7px;
+    font-size: 16px;
+}
+
+form button {
+    border: none;
+    padding: 15px 25px;
+    background: #d9a441;
+    color: #17251a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 7px 7px 0;
+}
+
+footer {
+    background: #17291c;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #b8c2b6;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .cards,
+    .curiosidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+        border-radius: 7px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
